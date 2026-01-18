@@ -1,61 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es-PE">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ACADEMIA IDAT</title>
-        <meta name="description" content="La mejor plataforma para aprender desarrollo web">
-        <meta name="author" content="Fernando Ariel Medina Aguilar">
-        <link rel="stylesheet" href="css/estilazo.css">
-    </head>
-    <body>
-        <header>
-            <h1>ACADEMIA IDAT</h1>
-            <p><strong>La mejor academia</strong> para aprender desarrollo web.</p>
-        </header>
-        <main>
-            <section>
-                <h2>¿Por qué estudiar en IDAT?</h2>
-                <p>Idat es <strong>la mejor plataforma</strong> para aprender porque tiene los mejores cursos</p>
-                <h3>Conoce a nuestros profesores:</h3>
-                <article>
-                    <h2>José Armando</h2>
-                    <small>Experto en JavaScript</small>
-                    <p>Trabajó en:</p>
-                    <ul>
-                        <li>Microsoft</li>
-                        <li>Nvidia</li>
-                        <li>Apple</li>
-                    </ul>
-                </article>
-                <article>
-                    <h2>Ariel Medina</h2>
-                    <small>Experto en todo, novato en nada</small>
-                    <p>Trabajó en:</p>
-                    <ul>
-                        <li>Cachina este</li>
-                        <li>Feria Balta</li>
-                        <li>Solutions Computer</li>
-                    </ul>
-                </article>
-            </section>
-            <section>
-                <h2>Registrarse</h2>
-                <!-- INGRESO DE FORMULARIO -->
-                 <form action="" method="post">
-                    <label for="email">Correo Electronico</label>
-                    <input type="email" id="email" name="email" required placeholder="Ingrese Correo">
-                    <br><br>
-                    
-                   <label for="password">Ingrese Contraseña</label>
-                   <input type="password" id="password" name="password" placeholder="Ingrese Contraseña" required><br><br>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACADEMIA IDAT</title>
+    <meta
+      name="description"
+      content="La mejor plataforma para aprender desarrollo web"
+    />
+    <meta name="author" content="Fernando Ariel Medina Aguilar" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/estilazo.css" />
+  </head>
+  <body>
+    <div class="container text-center fs-1">
+      ACADEMIA ACADEMIA IDAT LA MEJOR DEL MUNDO
+    </div>
+    <div class="container text-center fs-2 mt-3">
+      ¿PORQUE ESTUADIAR EN IDAT?
+    </div>
+    <div class="container text-center fs-5 mt-3 mb-3">
+      Idat es la mejor plataforma para aprender porque tiene los mejores cursos
+    </div>
+    <div class="container d-flex justify-content-center">
+      <div class="container my-5">
+        <p class="fs-5 text-center mb-4">
+          Conoce a nuestros mejores profesores
+        </p>
 
-                    <button type="submit" id="btn">Ingresar</button>
-                    <button type="reset" id="btn">Limpiar Campos</button>
-                 </form>
-                 <!-- Fin de Formulario-->
-            </section>
-        </main>
-        <script src="js/javascript.js"></script>
-    </body>
+        <div class="row justify-content-center gap-4">
+          <div class="col-12 col-md-4 d-flex justify-content-center">
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/profesorUno.png"
+                class="card-img-top"
+                alt="Profesor 1"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Palacios Diaz Jose</h5>
+                <p class="card-text">
+                  Experto en desarrollo web y tecnologías modernas.
+                </p>
+                <a href="#" class="btn btn-primary">Ver perfil</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 d-flex justify-content-center">
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/profesorUno.png"
+                class="card-img-top"
+                alt="Profesor 2"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Medina Aguilar Fernando</h5>
+                <p class="card-text">
+                  Especialista en bases de datos y backend.
+                </p>
+                <a href="#" class="btn btn-primary">Ver perfil</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex justify-content-center p-2">
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+          <div id="emailHelp" class="form-text">
+           Nunca compartiremos su correo electrónico con nadie más.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Recordar Contraseña</label
+          >
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary buton px-4 py-2">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="js/javascript.js"></script>
+  </body>
 </html>
